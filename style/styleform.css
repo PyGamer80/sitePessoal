@@ -1,0 +1,246 @@
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2EFE9;
+    z-index: 0;
+    
+}
+/* Div principal*/
+main{
+    position: absolute;
+    width: 60%;   
+    height: 100%;  
+    margin-left: 20%;
+}
+header{
+    
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: -5px;
+}
+/*Barra footer*/
+footer{
+    position: fixed;
+    width: 60%;
+    bottom: 0px;
+}
+/* Barra de navegação*/
+nav{
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+}
+.links{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    opacity: 1; 
+    right: 5%;
+}
+a{background: -webkit-linear-gradient(#000, #8E1D3B) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.linksup{
+    position: relative;
+    list-style-type:none;
+    font-size: 150%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+/* Estilização dos icones no cabeçalho*/
+.icons{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 5%;
+    opacity: 1;  
+}
+/* Estilização dos itens da lista */
+.linksub{
+    list-style-type:none;
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+/* Estilização dos links*/
+i{
+    background: -webkit-linear-gradient(#000, #8E1D3B) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.quadro{
+    position:absolute;
+    top: 80px;
+    width: 100%;
+    height: 750px;
+    background: -webkit-linear-gradient( #BFD4D9, #F2EFE9);
+    transition-duration: 1s;
+}
+.quadro2{
+    position:absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    background: -webkit-linear-gradient(#F2EFE9, #BFD4D9) ;
+    transition-duration: 1s;
+}
+.titulo{
+    
+    position:absolute;
+    width: 50%;
+    left: 25%;
+    top: 25px;
+    font-size: 300%;
+    background: -webkit-linear-gradient(rgb(20, 2, 2), #8E1D3B) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input{
+    position: absolute;
+    background: transparent;
+    border: 0.1px;
+    border-bottom: 1px; 
+    color: #A63C58;
+    border-bottom-style: solid;
+    width: 80%;
+    height: 30px;
+    left: 20%;
+    box-sizing: border-box;
+   
+}
+.label{
+    position: absolute;
+    left: 20%;
+    color: #000;
+}
+.nome1{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 25%;
+}
+.sobrenome{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 35%;
+}
+.datanasc{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 45%;
+}
+.email{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 55%;
+}
+.lebel1{
+    position: absolute;
+    color: #8E1D3B;
+    font-size: 150%;
+    left: 35%;
+    top: 20%;
+}
+.buttom{
+    position: absolute;
+    
+    transition-duration:  1s;
+    color: #BFD4D9;
+    border: none;
+    width: 50%;
+    height: 50px;
+    left: 25%;
+    top: 480px;
+    border-radius: 10px;
+    
+}
+/*Estilizaçãso do nome no cabeçalho */
+.nome{
+    font-style: italic;
+    position:absolute;
+    z-index: 1;
+    left: 5%;
+    font-size: 300%;
+    background: -webkit-linear-gradient(#000, #8E1D3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+}
+/* Estilização das imagens da pagina */
+.quadro:hover{
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    box-shadow: 10px 5px 5px #BFD4D9;
+}
+.quadro2:hover{
+    box-shadow: 10px 5px 5px #BFD4D9;
+}
+.buttom:hover{
+    
+    transition-duration: 1s;
+    cursor: pointer;
+    border: 0.1px;
+    border-style: solid; color: #8E1D3B;
+    box-shadow: 10px 5px 5px #8E1D3B;
+}
+@media only screen and (max-width:450px){
+    main{
+        width: 100%;   
+        height: 100%;  
+        margin-left: 0%;
+    }
+    .nome{
+        left: 5%;
+        font-size: 130%;
+        margin-top: 10px;
+    }
+    nav{
+        height: 40px;
+        opacity: 0.8;
+        backdrop-filter: blur(10px);
+    }
+    .links{
+        width: 200px;
+        right: 5%;
+    }
+    .linksup{
+        font-size: 90%;
+        float: left;
+        margin-left: 8px;
+        margin-right: 0%;
+        margin-top: 5px;
+    }
+    .icons{
+       
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0%;
+        opacity: 1;  
+    }
+    footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    .linksub{
+        list-style-type:none;
+        font-size: 30px;
+        float: right;
+        margin-right: 10px;
+        margin-top: -13px;
+    }
+}
